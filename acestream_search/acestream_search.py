@@ -188,8 +188,8 @@ def make_playlist(args, item, counter):
                 title += ' [' + categories + ' ]'
 
             dt = datetime.fromtimestamp(item['availability_updated_at'])
-            title += ' ' + dt.isoformat(sep=' ')
-            title += ' a=' + str(item['availability'])
+            # title += ' ' + dt.isoformat(sep=' ')
+            # title += ' a=' + str(item['availability'])
             if 'bitrate' in item:
                 title += " b=" + str(item['bitrate'])
         if args.url:
